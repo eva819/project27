@@ -5,7 +5,7 @@ class rope{
         var options = {
             bodyA:body1,
             bodyB:body2,
-            pointB:{x:yhis.offsetX , y:this.offsetY}
+            pointB:{x:this.offsetX , y:this.offsetY}
         }
         //console.log(options);
         this.rope = Constraint.create(options);
@@ -18,7 +18,7 @@ class rope{
         strokeWeight(2);
 
         var Anchor1X=pointA.x
-        var Anchor1y=pointA.y
+        var Anchor1Y=pointA.y
 
         var Anchor2X=pointB.x+this.offsetX
         var Anchor2Y=pointB.y+yhis.offsetY
